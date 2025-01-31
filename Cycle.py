@@ -34,7 +34,7 @@ while running:
     pygame.draw.line(screen,cycle_colour,(x7, y7),(x8, y8),4)
 
 
-
+    #cycle tires
     pygame.draw.circle(screen,(0,0,0),(x1,y1),40,width=8)
     pygame.draw.circle(screen,(0,0,0),(x5,y5),40,width=8)
     x1+=1
@@ -55,7 +55,7 @@ while running:
         x6,y6=195,220
         x7,y7=213, 215
         x8,y8=177, 230
-        
+
     pygame.display.flip()
     pygame.time.Clock().tick(60)
 pygame.quit()

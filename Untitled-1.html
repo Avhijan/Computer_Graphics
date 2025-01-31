@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Rotation with Scale and Translate</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #121212;
+      perspective: 800px; /* Creates depth in the 3D scene */
+    }
+
+    .cube {
+      width: 100px;
+      height: 100px;
+      background-color: #f29ad8;
+      transform-style: preserve-3d;
+      animation: transformCube 5s infinite linear;
+    }
+
+    @keyframes transformCube {
+      from {
+        transform: scale(1) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      to {
+        transform: scale(2) translateZ(150px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cube"></div>
+</body>
+</html>
